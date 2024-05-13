@@ -1,4 +1,4 @@
-list_of_packages = c("TreeSim", "NELSI","MCMCpack","optparse","devtools","dplyr")
+list_of_packages = c("TreeSim","optparse","devtools","dplyr")
 new_packages = list_of_packages[!(list_of_packages %in% installed.packages()[,"Package"])]
 if (any("NELSI" == new_packages))
 {
@@ -12,7 +12,8 @@ if (any("NELSI" == new_packages))
 
 library("dplyr")
 library("TreeSim")
-library("NELSI")
+library("ape")
+#library("NELSI")
 #library("MCMCpack")
 library("optparse")
 options(scipen = 100000000)
