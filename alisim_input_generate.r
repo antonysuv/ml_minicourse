@@ -20,7 +20,7 @@ options(scipen = 100000000)
 
 option_list = list(
   make_option(c("-t", "--topo"), type="character", default="((A,B),C);",help="Tree in newick e.g. ((A,B),C); or file", metavar="character"),
-  make_option(c("-n", "--nsim"), type="numeric", default=150000, help="Number of TRAIN simulations (default: 150000)", metavar="numeric"),  
+  make_option(c("-n", "--nsim"), type="numeric", default=1000, help="Number of TRAIN simulations (default: 150000)", metavar="numeric"),  
   make_option(c("-d", "--distribution"), type="character", default="unif,0,10", help="Branch length distribution (unif,exp,mixb,bd,dir)", metavar="character"),
   make_option(c("-l", "--len"), type="numeric", default=1000, help="Alignment length for IQTREE partiton file (default: 1000)", metavar="numeric"),
   make_option(c("-f", "--fname"), type="character", default="simulation", help="Name prefix for main file outputs (default: simulation)", metavar="character"),
